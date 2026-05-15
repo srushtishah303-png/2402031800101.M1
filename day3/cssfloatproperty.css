@@ -1,0 +1,66 @@
+#division1{
+    background-color: lightgoldenrodyellow;
+    color:cornflowerblue;
+    float: left;
+    width: 40%;;
+}
+
+#division2{
+    background-color: lightgoldenrodyellow;
+    color:cornflowerblue;
+    float: right;
+    width: 40%;;
+}
+
+#division3,
+#division4,
+#division5{
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Division 3 */
+#division3{
+    background-color: blanchedalmond;
+    color: blueviolet;
+}
+
+#division4{
+    background-color: burlywood;
+    color: brown;
+}
+
+/* Division 5 */
+#division5{
+    background-color: lightblue;
+    color: black;
+}
+
+/* Responsive design for screens larger than 500px */
+
+@media  (min-width: 500px){
+
+    #division3{
+        float: right;
+        width: 30%;
+    }
+
+    #division4{
+        float: left;
+        width: 30%
+        ASIDE
+        FOOTER;
+    }
+
+    #division5{
+        float: left;
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+

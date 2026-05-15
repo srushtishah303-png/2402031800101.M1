@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+let pin = 1234;
+let enteredPin = 1234;
+let check = 1;
+
+while(check <= 1){
+
+    if(pin == enteredPin){
+        document.getElementById("demo").innerHTML = "Correct PIN";
+    }else{
+        document.getElementById("demo").innerHTML = "Wrong PIN";
+    }
+
+    check++;
+}
+
+</script>
+
+</body>
+</html>
