@@ -1,0 +1,32 @@
+<html>
+    <body>
+
+        <script>
+            function f()
+{
+   var a = document.forms["myForm"];
+   var u = a.uname.value;
+   var p = a.pword.value;
+   if(u=="admin" && p=="123")
+   {
+      alert("valid");
+   }
+   else
+   {
+       alert("Invalid");
+   }
+}
+
+        </script>
+      <form name="myForm">
+        <label for="uname">Username:</label>
+        <input type="text" name="uname">
+        <label for="pword">Password:</label>
+        <input type="text" name="pword">
+        <input type="button" onClick="f()" value="Login">
+
+     </form>
+
+
+    </body>
+</html>
