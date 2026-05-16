@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+div{
+    background-color: aquamarine;
+    width: 30%;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+div:hover{
+   background-color: lightpink;
+   transform: scale(1.1);
+}
+    
+   div1{
+    background-color: rgb(6, 6, 6);
+    width: 30%;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+    
+
+div1:hover{
+   background-color: lightpink;
+   box-shadow: 0px 4px 8px rgba(red, green, blue, alpha);
+  
+}
+
+
+
+

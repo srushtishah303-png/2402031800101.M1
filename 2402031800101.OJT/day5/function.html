@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// A function can return value of any type using the keyword "return".
+// The same function can possibly return values of different types
+function foo (p1) 
+{
+	if (typeof(p1) == "number")
+		return 0;	// Return a number
+ // This statement will be executed before returning from the function
+	else
+	if (typeof(p1) == "string")
+		return "zero"; // Return a string
+    document.write("This will be printed"); // This statement will be executed before returning from the function
+
+	// If no value being explicitly returned 
+	// "undefined" is returned.
+}
+
+document.write(foo(1));		// returns 0
+document.write(foo("abc"));		// returns "zero"
+document.write(foo());		// returns undefined
+
+
+
+    </script>
+</body>
+</html>
