@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+let cart = [200, 150, 300];
+let total = 0;
+let i = 0;
+
+do{
+    total += cart[i];
+    i++;
+}while(i < cart.length);
+
+document.getElementById("demo").innerHTML = total;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("download.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+#para1 {
+    color: hotpink;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+h1 {
+    color: hotpink;
+    text-align: center;
+}
+
+h2 {
+    color: hotpink;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4,
+h5 {
+    color: hotpink;
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.class1 {
+    color: hotpink;
+    font-size: 24px;
+}
+
+.class2 {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+div {
+    width: 70%;
+    margin: 40px auto;
+    padding: 20px;
+    border: 3px solid hotpink;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+div h1 {
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: hotpink;
+}
+
+
+.myclass {
+    color: hotpink;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+p {
+    width: fit-content;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background: royalblue;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+

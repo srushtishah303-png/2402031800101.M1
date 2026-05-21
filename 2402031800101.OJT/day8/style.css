@@ -1,0 +1,383 @@
+/* =========================
+        COMPLETE CSS
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Raleway',sans-serif;
+  background:#f8f5f0;
+  color:#111;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+h1,h2,h3{
+  font-family:'Cormorant Garamond',serif;
+}
+
+section{
+  padding:80px 8%;
+}
+
+/* NAVBAR */
+
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  height:90px;
+
+  background:white;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:0 8%;
+
+  z-index:1000;
+
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+  font-size:28px;
+  letter-spacing:3px;
+}
+
+.nav-links{
+  display:flex;
+  gap:35px;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:#111;
+  font-size:15px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#b99874;
+}
+
+.nav-icons button{
+  background:#111;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:60px;
+
+  padding-top:140px;
+}
+
+.small-title{
+  letter-spacing:4px;
+  color:#777;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  font-size:78px;
+  line-height:1;
+  margin-bottom:30px;
+}
+
+.hero h1 span{
+  color:#b99874;
+}
+
+.hero-text{
+  font-size:18px;
+  color:#555;
+  margin-bottom:40px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:20px;
+}
+
+.btn-dark,
+.btn-light{
+  padding:16px 34px;
+  border-radius:40px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-dark{
+  background:#111;
+  color:white;
+}
+
+.btn-light{
+  border:1px solid #111;
+  color:#111;
+}
+
+.btn-dark:hover,
+.btn-light:hover{
+  transform:translateY(-3px);
+}
+
+.hero-box{
+  height:650px;
+  border-radius:30px;
+
+  background:
+  url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop')
+  center/cover;
+}
+
+/* SECTION TOGGLE */
+
+.section{
+  display:none;
+}
+
+.section.active{
+  display:block;
+}
+
+/* CATEGORY */
+
+.categories h2,
+.products h2,
+.newsletter h2{
+  text-align:center;
+  font-size:52px;
+  margin-bottom:60px;
+}
+
+.category-grid,
+.product-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.category-card{
+  position:relative;
+  height:400px;
+  border-radius:25px;
+  overflow:hidden;
+}
+
+.card-bg{
+  width:100%;
+  height:100%;
+  background-size:cover;
+  background-position:center;
+}
+
+.bg1{
+  background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop');
+}
+
+.bg2{
+  background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop');
+}
+
+.bg3{
+  background-image:url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop');
+}
+
+.bg4{
+  background-image:url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200&auto=format&fit=crop');
+}
+
+.category-card h3{
+  position:absolute;
+  bottom:30px;
+  left:30px;
+  color:white;
+  font-size:34px;
+}
+
+/* PRODUCTS */
+
+.product-card{
+  background:white;
+  border-radius:25px;
+  overflow:hidden;
+}
+
+.product-image{
+  height:450px;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.add-cart{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+
+  border:none;
+  background:white;
+  padding:14px 24px;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+.product-info{
+  padding:25px;
+  text-align:center;
+}
+
+.product-info h3{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+/* WOMEN */
+
+.women1{
+  background-image:url('https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop');
+}
+
+.women2{
+  background-image:url('https://www.google.com/imgres?q=heels%20for%20girls&imgurl=https%3A%2F%2Fmedia-ea.landmarkshops.in%2Fcdn-cgi%2Fimage%2Fh%3D739%2Cw%3D499%2Cq%3D85%2Cfit%3Dcover%2Flifestyle-new%2F1000016231574-Beige-Beige-1000016231574_01-2100.jpg&imgrefurl=https%3A%2F%2Fwww.lifestylestores.com%2Fin%2Fen%2Fc%2Fshoesandbags-women-heelsandals%3Fsrsltid%3DAfmBOoo80sptN11Qnj5fG-xe3D45SSPizY8IeestwhxMlIiNpXo4IgvD&docid=Mah-l9rCvcwpMM&tbnid=WfGkuxtUpVBCTM&vet=12ahUKEwj45P-rqcWUAxU42DgGHRlPKWk4ChCc8A56BAhCEAE..i&w=499&h=739&hcb=2&ved=2ahUKEwj45P-rqcWUAxU42DgGHRlPKWk4ChCc8A56BAhCEAE');
+}
+
+.women3{
+  background-image:url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=1200&auto=format&fit=crop');
+}
+
+/* MEN */
+
+.men1{
+  background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1200&auto=format&fit=crop');
+}
+
+.men2{
+  background-image:url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?q=80&w=1200&auto=format&fit=crop');
+}
+
+.men3{
+  background-image:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop');
+}
+
+/* SALE */
+
+.sale1{
+  background-image:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop');
+}
+
+.sale2{
+  background-image:url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=1200&auto=format&fit=crop');
+}
+
+.sale3{
+  background-image:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop');
+}
+
+/* product */
+
+.product-image{
+  height:450px;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  background-image: ('https://www.google.com/imgres?q=image%20of%20%20model%20for%20cothing%20%20website&imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F32504521%2Fpexels-photo-32504521.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-high-rollick-studio-553091901-32504521.jpg%26fm%3Djpg&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ffashion%2520model%2F&docid=t0pfmEd0igYkoM&tbnid=AN81PUg17iGS9M&vet=12ahUKEwjy4IOy3MSUAxVu3TgGHfYRACgQnPAOegQIIRAB..i&w=4160&h=6240&hcb=2&ved=2ahUKEwjy4IOy3MSUAxVu3TgGHfYRACgQnPAOegQIIRAB');
+
+
+}
+
+/* NEWSLETTER */
+
+
+
+.newcollection{
+  background:#111;
+  color:white;
+  text-align:center;
+}
+
+.newscollection-box{
+  max-width:700px;
+  margin:auto;
+
+  display:flex;
+  overflow:hidden;
+
+  border-radius:50px;
+  background:white;
+}
+
+.newcollection-box input{
+  flex:1;
+  padding:20px;
+  border:none;
+  outline:none;
+}
+
+.newcollection-box button{
+  background:#b99874;
+  border:none;
+  color:white;
+  padding:0 40px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#000;
+  color:#aaa;
+  text-align:center;
+  padding:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .category-grid,
+  .product-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    gap:20px;
+  }
+
+  .hero h1{
+    font-size:52px;
+  }
+
+}
