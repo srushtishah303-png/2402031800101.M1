@@ -1,16 +1,16 @@
-import './App.css'
+import'./App.css'
 
 function Hello1() {
 
 
-    const inVisible = true;
+    // const inVisible = true;
      
-    return (
-        <div>
-            <h1 className={inVisible ? "visible" : "invisible"}>Conditional rendering</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint ad quaerat fugit cupiditate blanditiis distinctio voluptate iste id, iusto nemo cum praesentium nostrum nesciunt! Architecto cum officia consectetur aliquid!</p>
-        </div>
-    )
+    // return (
+    //     <div>
+    //         <h1 className={inVisible ? "visible" : "invisible"}>Conditional rendering</h1>
+    //         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint ad quaerat fugit cupiditate blanditiis distinctio voluptate iste id, iusto nemo cum praesentium nostrum nesciunt! Architecto cum officia consectetur aliquid!</p>
+    //     </div>
+    // )
 
 //     const message = true;
 
