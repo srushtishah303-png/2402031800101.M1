@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Demo</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+</head>
+<body>
+
+   <p id="para1">lorem ipsum dolor sit amet  consectetur adipiscing elit</p>
+   <button id="fadein">fade in</button>
+   <button id="fadeout">fade out</button>
+   <button id="toggle">toggle</button>
+   <button id="show">show</button>
+   <button id="hide">hide</button>
+   <p id="para2">lorem ipsum dolor sit amet</p>
+   <p id="para3">lorem ipsum dolor sit amet </p>
+   <p id="para4">lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+   <p id="para5">lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+   <p id="para6">lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+
+   <label for="name">Name:</label>
+   <input type="text" id="name" name="name" placeholder="Enter your name">
+   <button id="btn">submit</button>
+   
+   <label for="age">Age:</label>
+    <input type="text" id="age" name="age" placeholder="Enter your age">
+    <p id="msg"></p>
+    <h2>FAQs</h2>
+
+<div class="faq">
+    <h3 class="question">1. What is jQuery?</h3>
+    <p class="answer">jQuery is a fast and lightweight JavaScript library that simplifies HTML document manipulation, event handling, and animations.</p>
+</div>
+
+<div class="faq">
+    <h3 class="question">2. How do I hide an element using jQuery?</h3>
+    <p class="answer">You can use the hide() method. Example: $("#para1").hide();</p>
+</div>
+
+<div class="faq">
+    <h3 class="question">3. How do I show an element using jQuery?</h3>
+    <p class="answer">You can use the show() method. Example: $("#para1").show();</p>
+</div>
+
+<div class="faq">
+    <h3 class="question">4. What does fadeOut() do?</h3>
+    <p class="answer">The fadeOut() method gradually hides an element by reducing its opacity.</p>
+</div>
+
+<div class="faq">
+    <h3 class="question">5. What does $(document).ready() do?</h3>
+    <p class="answer">It ensures that the code runs only after the entire HTML document has been loaded.</p>
+</div>
+
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+         $("#btn").click(function(){
+          var name = $("#name").val();
+          var age = $("#age").val();
+          $("#msg").text("Hello " + name + ", you are " + age + " years old.");
+         });
+        $(document).ready(function(){
+           alert("Document is ready!");
+            });
+        $("input[type='text']").focus(function(){
+            $(this).css("background-color", "yellow");
+        });
+        $("#para1").css
+            ("color", "red");
+            $("#para1").css({
+                "font-size": "20px",
+                "font-weight": "bold",
+                "background-color": "lightgray",
+                "border": "1px solid black",
+            })
+
+            $("#para2").hide();
+            $("#para2").show();
+           
+          $("#fadein").click(function(){
+            $("#para1").fadeIn(1000);
+          });
+          $("#fadeout").click(function(){
+            $("#para1").fadeOut(1000);
+          });
+          $("#toggle").click(function(){
+            $("#para1").toggle();
+          });
+          $("#show").click(function(){
+            $("#para1").show();
+          });
+          $("#hide").click(function(){
+            $("#para1").hide();
+          });
+
+          // Hide all answers initially
+                $(".answer").hide();
+
+          // Toggle answer when question is clicked
+              $(".question").click(function () {
+              $(this).next(".answer").slideToggle();
+               });
+    
+
+
+    </script>
+
+</body>
+</html>
